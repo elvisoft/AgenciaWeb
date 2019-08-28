@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="shortcut icon" href="CrazyEye.ico">
+<title>Contacto con webgratis</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<META NAME="DC.Language" SCHEME="RFC1766" CONTENT="Spanish">
+<META NAME="AUTHOR" CONTENT="Elvis Wilson">
+<META NAME="REPLY-TO" CONTENT="info@webgratis.com.ar">
+<LINK REV="made" href="mailto:info@webgratis.com.ar">
+<META NAME="DESCRIPTION" CONTENT="Contacto con webGratis! Tenga su sitio web gratis en Argentina. Plan Free. Desarrollo de sitios web y de aplicaciones para celulares Android. Diseño web en Argentina">
+<META NAME="KEYWORDS" CONTENT="webhosting, hosting gratis, diseño web gratis, diseño web gratis en Argentina, dominios gratis, Registro de dominios, dominios nacionales, dominios internacionales, desarrollo web, pymes en Argentina, su empresa en la web, aplicaciones android, android app, desarrollo web gratis en Argentina">
+
+<META NAME="robots" content="ALL">
+
+<link rel="stylesheet" href="css/reset.css" type="text/css" media="screen">
+<link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+<link rel="stylesheet" href="css/layout.css" type="text/css" media="screen">
+<script src='https://www.google.com/recaptcha/api.js?hl=es'></script>
+<script type="text/javascript" src="js/jquery-1.6.min.js"></script>
+<script src="js/cufon-yui.js" type="text/javascript"></script>
+<script src="js/cufon-replace.js" type="text/javascript"></script>
+<script src="js/Open_Sans_400.font.js" type="text/javascript"></script>
+<script src="js/Open_Sans_Light_300.font.js" type="text/javascript"></script>
+<script src="js/Open_Sans_Semibold_600.font.js" type="text/javascript"></script>
+<script src="js/FF-cash.js" type="text/javascript"></script>
+
+<script language="javascript" type="text/javascript">
+
+window.onload = function () {
+document.form1.nombre.focus();
+}
+
+function revisarMensajeAsunto()
+{
+  if(document.getElementById('nombre').value=='')
+  {
+    alert('El Campo Nombre no puede quedar vacio... ');
+	//document.getElementById('nombre').focus();
+	document.getElementById('form1').action='';
+	
+  }
+ 
+ if(document.getElementById('mail').value=='')
+  {
+    alert('El Campo mail no puede quedar vacio... ');
+	//document.getElementById('mail').focus();
+    document.getElementById('form1').action=''
+  }
+
+ if(document.getElementById('comentario').value=='')
+  {
+    alert('El Campo mensaje no puede quedar vacio... ');
+	//document.getElementById('mensaje').focus();
+	document.getElementById('form1').action=''
+  }
+
+} 
+function revisarMensaje()
+{
+	var email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
+	var	email_from = document.getElementById('mail').value;
+	
+	if (document.form1.mail.value.indexOf('@') == -1)
+	{ var emailok = false; }
+	
+	else { var emailok = true }
+	
+/*	if( !(/\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)/.test(email_from)) ) {
+  	var emailok=false;
+	}
+	else
+	{
+		var emailok=true;
+	}
+*/  
+if (document.getElementById('nombre').value!='' & document.getElementById('mail').value!='' & document.getElementById('comentario').value!='' & emailok==true)
+ { 
+   document.getElementById('form1').action='contacto.php';
+   }
+else 
+ {
+    alert('Debe llenar correctamente todos los datos que son obligatorios:(*)'); 
+  }
+}
+</script> 
+
+
+<!--[if lt IE 9]>
+<script type="text/javascript" src="js/html5.js"></script>
+<link rel="stylesheet" href="css/ie.css" type="text/css" media="screen">
+<![endif]-->
+</head>
+<body id="page5">
+<!-- header -->
+<div class="bg">
+  <div class="main">
+    <header>
+      <div class="row-1">
+        <h1> <a class="logo" href="index.html"></a> </h1>
+        <form id="search-form" action="#" method="post" enctype="multipart/form-data">
+          <fieldset>
+            <div class="search-form">
+              <input type="text" name="search" value="Type Keyword Here" onBlur="if(this.value=='') this.value='Type Keyword Here'" onFocus="if(this.value =='Type Keyword Here' ) this.value=''" />
+              <a href="#">Search</a> </div>
+          </fieldset>
+        </form>
+      </div>
+      <div class="row-2">
+        <nav>
+          <ul class="menu">
+	
+					<li><a href="index.php">Portada</a></li> 
+					<li><a href="portafolio.php">Portafolio</a></li>
+            		<li><a href="servicioswebgratis.php">Servicios</a></li>
+            		<li><a href="desarrolloaplicacionesandroid.php">Android Apps</a></li>
+            		<li class="last-item"><a class="active" href="contacts.html">Contacto</a></li>
+
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- content -->
+    <section id="content">
+      <div class="padding">
+        <div class="wrapper margin-bot">
+          <div class="col-3">
+            <div class="indent">
+              <h2 class="p0">Formulario de Contacto</h2>           
+
+              <!-- www.123formbuilder.com script begins here --><script type="text/javascript" defer src="//www.123formbuilder.com/embed/4884318.js" data-role="form" data-default-width="650px"></script><!-- www.123formbuilder.com script ends here -->
+
+              <!--
+              <form name="form1" id="form1" action="contacto.php" method="post" enctype="multipart/form-data">
+              	 <table width="594" border="1" cellpadding="2" cellspacing="1">
+                  <tr>
+                    <td width="95" height="32">Nombre:</td>
+                    <td width="79"><input id="nombre" name="nombre" type="text" size="45" /></td>
+                    <td width="413">(*)</td>
+                  </tr>
+                  <tr>
+                    <td height="30">Email:</td>
+                    <td><input id="mail" name="mail" type="text" size="45" /></td>
+                    <td>(*)</td>
+                  </tr>
+                  <tr>
+                    <td height="31">Telefono:</td>
+                    <td><input id="telefono" name="telefono" type="text" size="45" /></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td height="32">Asunto:</td>
+                    <td><input id="asunto" name="asunto" type="text" size="45" /></td>
+                    <td>(*)</td>
+                  </tr>
+                  <tr>
+                    <td height="109">Mensaje</td>
+                    <td><textarea id="comentario" name="comentario" cols="50" rows="10"></textarea></td>
+                    <td>(*)</td>
+                  </tr>
+                  
+                  <tr>
+                    <td height="36"></td>
+                    <td><div class="g-recaptcha" data-sitekey="6LeMbwcTAAAAAMQ7dXUxfb3nDN2oZVfy1e8qdC7a"></div></td>
+                    <td>&nbsp;</td>
+                  </tr>
+                  
+                   <tr>
+                    <td height="40"></td>
+                    <td>(*): datos obligatorios</td>
+                    <td>&nbsp;</td>
+                  </tr>
+                  
+                  <tr>
+                    <td></td>
+                    <td><div class="buttons"> <input class="button-2" name="Submit" type="submit" value="Enviar" onclick="revisarMensaje()"/> </div></td>
+                    <td></td>
+                  </tr>
+                </table>                             
+              </form>
+              -->
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="block-news">
+              <h3 class="color-4 indent-bot2">Contacto</h3>
+              <dl class="contact p3">
+                <dt><span>Direccion:</span>Salta, Argentina</dt>
+                <dd><span>Telefono:</span>(387) 2422372</dd>
+                <dd><span>E-mail:</span><a href="http://safemail.justlikeed.net/" target="_blank"><img src="http://safemail.justlikeed.net/e/1724d6b8a98b212474a20aef54178730.png" border="0" align="absbottom" title="Email image created with safemail.justlikeed.net"></a></dd>
+              </dl>
+              <h3 class="color-4 indent-bot2">Soporte</h3>
+              <p class="text-1">Si usted ya es cliente debe dirigirse al soporte tecnico brindado por webgratis!</p>
+            </div>
+          </div>
+        </div>
+        <div class="box-bg">
+          <div class="wrapper">
+            <div class="col-1">
+              <div class="box first">
+                <div class="pad">
+                  <div class="wrapper indent-bot"> <strong class="numb img-indent2">01</strong>
+                    <div class="extra-wrap">
+                      <h3 class="color-1"><strong>Plan</strong>Free</h3>
+                    </div>
+                  </div>
+                  <div class="wrapper"> <a class="button img-indent-r" href="#">>></a>
+                    <div class="extra-wrap"> Hosting gratis, dominio gratis, diseño web bonificado </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-1">
+              <div class="box second">
+                <div class="pad">
+                  <div class="wrapper indent-bot"> <strong class="numb img-indent2">02</strong>
+                    <div class="extra-wrap">
+                      <h3 class="color-2"><strong>Plan</strong>Pyme</h3>
+                    </div>
+                  </div>
+                  <div class="wrapper"> <a class="button img-indent-r" href="#"></a>
+                    <div class="extra-wrap"> Hosting premium, diseño bonificado, dominio .com.ar incluido </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="box third">
+                <div class="pad">
+                  <div class="wrapper indent-bot"> <strong class="numb img-indent2">03</strong>
+                    <div class="extra-wrap">
+                      <h3 class="color-3"><strong>Plan</strong>AutoAdmin</h3>
+                    </div>
+                  </div>
+                  <div class="wrapper"> <a class="button img-indent-r" href="#">>></a>
+                    <div class="extra-wrap"> Sitio web autoadministrable. Usted administra su sitio web facilmente.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer>
+      <div class="row-top">
+        <div class="row-padding">
+          <div class="wrapper">
+            <div class="col-1">
+              <h4>Estamos en:</h4>
+              <dl class="address">
+                <dt><span>Pais:</span>Argentina</dt>
+                <dd><span>Provincia:</span>Salta</dd>
+                <dd><span>Email:</span><a href="#">info@webgratis.com.ar</a></dd>
+              </dl>
+            </div>
+            <div class="col-2">
+              <h4>Siguenos:</h4>
+              <ul class="list-services">
+                <li class="item-1"><a href="#">Facebook</a></li>
+                <li class="item-2"><a href="#">Twitter</a></li>
+                <li class="item-3"><a href="#">LinkedIn</a></li>
+              </ul>
+            </div>
+            <div class="col-3">
+              <h4>FAQs</h4>
+              <ul class="list-1">
+                <li><a href="#">Es Gratis?</a></li>
+                <li><a href="#">Cuanto demoran?</a></li>
+                <li><a href="#">Que necesito?</a></li>
+                <li><a href="#">Formas de pago?</a></li>
+              </ul>
+            </div>
+            <div class="col-4">
+              <div class="indent3"> <strong>Web<strong>Gratis!</strong></strong> <strong class="phone"><strong>Telefono:</strong> (387) 2422372</strong> </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row-bot">
+        <div class="aligncenter">
+          <p class="p0">Copyright &copy; <a href="#">WebGratis!</a> Todos los derechos reservados</p>
+          <!-- {%FOOTER_LINK} -->
+        </div>
+      </div>      
+    </footer>
+    <br />
+    <div align=center>Desarrollado y tuneado por WebGratis! <a href='http://www.webgratis.com.ar'>www.webgratis.com.ar</a></div><br />
+<br />
+    
+    
+  </div>
+</div>
+<script type="text/javascript">Cufon.now();</script>
+
+</html>
